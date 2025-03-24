@@ -276,4 +276,113 @@
     ],
     "dateAdded": "2024-09-29"
   }
+  {
+    "appId": "a43e5392-f48b-46a4-a0f1-098b5eeb4757",
+    "appDisplayName": "CloudSponge",
+    "appOwnerOrganizationId": "unknown",
+    "appPublisherName": "unknown",
+    "appPublisherId": "unknown",
+    "description": "CloudSponge allows you to export all contacts from an inbox. These contacts can be used as targets for phishing emails, allowing an email compromise campaign to spread more.",
+    "permissions": [
+      {
+        "resource": "Microsoft Graph",
+        "permission": "openid",
+        "type": "Delegated"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "permission": "profile",
+        "type": "Delegated"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "permission": "Contacts.Read",
+        "type": "Delegated"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "permission": "People.Read",
+        "type": "Delegated"
+      }
+    ],
+    "tags": [
+      "exfiltration",
+      "BEC",
+      "AddressBook"
+    ],
+    "references": [
+      "https://www.exportmycontacts.com",
+      "https://cybercorner.tech/common-oauth-apps-used-in-business-email-compromise/#cloudsponge",
+      "https://github.com/randomaccess3/detections/blob/main/M365_Oauth_Apps/MaliciousOauthAppDetections.json"
+    ],
+    "mitreTTP": [
+      "T1567"
+    ],
+    "contributors": [
+      "Syne0",
+      "randomaccess3"
+    ],
+    "dateAdded": "2024-09-29"
+  },
+  {
+    "appId": "caffae8c-0882-4c81-9a27-d1803af53a40",
+    "appDisplayName": "SigParser",
+    "appOwnerOrganizationId": "28300cff-466f-4374-a59a-f3e5a6fc2c56",
+    "appPublisherName": "unknown",
+    "appPublisherId": "unknown",
+    "description": "SigParser is used to exfiltrate contacts and recipients from an account's address list, calendars, and email, allowing malicious email such as spam or phishing to easily target relevant recipients.",
+    "permissions": [
+      {
+        "resource": "Microsoft Graph",
+        "permission": "Calendars.Read.Shared",
+        "type": "Delegated"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "permission": "Contacts.ReadWrite.Shared",
+        "type": "Delegated"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "permission": "Mail.Read.Shared",
+        "type": "Delegated"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "permission": "User.ReadBasic.All",
+        "type": "Delegated"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "permission": "offline_access",
+        "type": "Delegated"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "permission": " User.Read",
+        "type": "Delegated"
+      }
+    ],
+    "tags": [
+      "collecion",
+      "exfiltration",
+      "phishing",
+      "BEC"
+    ],
+    "references": [
+      "https://cybercorner.tech/common-oauth-apps-used-in-business-email-compromise/#SigParser", 
+      "https://support.sigparser.com/en/articles/8844405-i-think-someone-hacked-my-mailbox-can-you-delete-my-account",
+      "https://github.com/randomaccess3/detections/blob/main/M365_Oauth_Apps/MaliciousOauthAppDetections.json"
+    ],
+    "mitreTTP": [
+      "T1530",
+      "T1567",
+      "T1087.003"
+    ],
+    "contributors": [
+      "Syne0",
+      "randomaccess3"
+    ],
+    "dateAdded": "2025-3-24"
+  }
 ]

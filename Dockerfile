@@ -4,8 +4,8 @@ FROM node:18
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy package.json and package-lock.json files first for caching layer purposes
-COPY package.json package-lock.json ./
+# Copy package.json files first for caching layer purposes
+COPY package.json ./
 
 # Install dependencies
 RUN npm install
