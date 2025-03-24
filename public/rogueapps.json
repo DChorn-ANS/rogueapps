@@ -26,6 +26,11 @@
         "resource": "Microsoft Graph",
         "permission": "openid",
         "type": "Delegated"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "permission": "IMAP.AccessAsUser.All",
+        "type": "Delegated"
       }
     ],
     "tags": [
