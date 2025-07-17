@@ -342,5 +342,119 @@
       "randomaccess3"
     ],
     "dateAdded": "2025-3-24"
+  },{
+    "appId": "2ef68ccc-8a4d-42ff-ae88-2d7bb89ad139",
+    "appDisplayName": "Mail_Backup",
+    "appOwnerOrganizationId": "unknown",
+    "appPublisherName": "PerfectData Software Ltd.",
+    "appPublisherId": "unknown",
+    "description": "An application that can export mailboxes for backup purposes. Used maliciously to exfiltrate data and stage financial fraud transactions.",
+    "permissions": [
+      {
+        "resource": "Microsoft Graph",
+        "permission": "offline_access",
+        "type": "Delegated"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "permission": "profile",
+        "type": "Delegated"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "permission": "User.Read",
+        "type": "Delegated"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "permission": "openid",
+        "type": "Delegated"
+      },
+      {
+        "resource": "Microsoft Exchange",
+        "permission": "EWS.AccessAsUser.All",
+        "type": "Delegated"
+      }
+    ],
+    "tags": [
+      "exfiltration",
+      "BEC",
+      "backup"
+    ],
+    "references": [
+      "https://cybercorner.tech/malicious-azure-application-perfectdata-software-and-office365-business-email-compromise/",
+      "https://darktrace.com/blog/how-abuse-of-perfectdata-software-may-create-a-perfect-storm-an-emerging-trend-in-account-takeovers",
+      "https://www.secureworks.com/blog/qr-phishing-leads-to-microsoft-365-account-compromise",
+      "https://github.com/randomaccess3/detections/blob/main/M365_Oauth_Apps/MaliciousOauthAppDetections.json"
+    ],
+    "mitreTTP": [],
+    "contributors": [
+      "Huntress Research Team",
+      "randomaccess3"
+    ],
+    "dateAdded": "2024-08-14"
+  },{
+    "appId": "858d7e42-35f0-44b7-9033-df309239a4f7",
+    "appDisplayName": "ZoomInfo Login",
+    "appOwnerOrganizationId": "945a9641-35c7-435c-a5a0-c8753e6dff88",
+    "appPublisherName": "unknown",
+    "appPublisherId": "unknown",
+    "description": "ZoomInfo is a business intelligence platform that contains a large database of company and contact information. It is possible to use ZoomInfo via SSO with a Microsoft365 account, which creates this service principal within a tenant.",
+    "permissions": [
+    ],
+    "tags": [
+      "exfiltration"
+    ],
+    "references": [
+      "https://cybercorner.tech/common-oauth-apps-used-in-business-email-compromise/#ZoomInfo"
+    ],
+    "mitreTTP": [],
+    "contributors": [
+      "Huntress Research Team",
+      "syne0"
+    ],
+    "dateAdded": "2024-08-14"
+  },{
+    "appId": "497ac034-5120-4c1a-929a-0351f5c09918",
+    "appDisplayName": "ZoomInfo Communitiez Login",
+    "appOwnerOrganizationId": "945a9641-35c7-435c-a5a0-c8753e6dff88",
+    "appPublisherName": "unknown",
+    "appPublisherId": "unknown",
+    "description": "ZoomInfo Communitiez Login is the service principal that is consented to when the 'My Connections' feature within ZoomInfo is used. This feature extracts address book and other contact information from the victim account, allowing for ease of target discovery, exfiltration, and targeted phishing attacks.",
+    "permissions": [
+    ],
+    "tags": [
+      "exfiltration"
+    ],
+    "references": [
+      "https://cybercorner.tech/common-oauth-apps-used-in-business-email-compromise/#ZoomInfo"
+    ],
+    "mitreTTP": [],
+    "contributors": [
+      "Huntress Research Team",
+      "syne0"
+    ],
+    "dateAdded": "2024-08-14"
+  },{
+    "appId": "77468577-4f6e-40e7-b745-11d3d0c28095",
+    "appDisplayName": "Fastmail",
+    "appOwnerOrganizationId": "9188040d-6c67-4c5b-b112-36a304b66dad",
+    "appPublisherName": "unknown",
+    "appPublisherId": "unknown",
+    "description": "Fastmail is an alternative email service that allows export from various email providers, including Microsoft365. If a malicious party consents to Fastmail with an account, all email is exfiltrated to an attacker-controlled Fastmail account, with the option to continue to exfiltrate email post-consent.",
+    "permissions": [
+    ],
+    "tags": [
+      "exfiltration"
+    ],
+    "references": [
+      "https://cybercorner.tech/common-oauth-apps-used-in-business-email-compromise/#Fastmail"
+    ],
+    "mitreTTP": [],
+    "contributors": [
+      "Huntress Research Team",
+      "syne0"
+    ],
+    "dateAdded": "2024-08-14"
   }
 ]
