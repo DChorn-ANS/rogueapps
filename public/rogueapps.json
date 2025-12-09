@@ -33,21 +33,14 @@
         "type": "Delegated"
       }
     ],
-    "tags": [
-      "BEC",
-      "email",
-      "spam"
-    ],
+    "tags": ["BEC", "email", "spam"],
     "references": [
       "https://www.emclient.com/",
       "https://www.huntress.com/blog/legitimate-apps-as-traitorware-for-persistent-microsoft-365-compromise",
       "https://cybercorner.tech/malicious-usage-of-em-client-in-business-email-compromise/"
     ],
     "mitreTTP": [],
-    "contributors": [
-      "Huntress Research Team",
-      "sfaxluke"
-    ],
+    "contributors": ["Huntress Research Team", "sfaxluke"],
     "dateAdded": "2024-08-05"
   },
   {
@@ -84,11 +77,7 @@
         "type": "Delegated"
       }
     ],
-    "tags": [
-      "exfiltration",
-      "BEC",
-      "backup"
-    ],
+    "tags": ["exfiltration", "BEC", "backup"],
     "references": [
       "https://cybercorner.tech/malicious-azure-application-perfectdata-software-and-office365-business-email-compromise/",
       "https://darktrace.com/blog/how-abuse-of-perfectdata-software-may-create-a-perfect-storm-an-emerging-trend-in-account-takeovers",
@@ -96,10 +85,7 @@
       "https://github.com/randomaccess3/detections/blob/main/M365_Oauth_Apps/MaliciousOauthAppDetections.json"
     ],
     "mitreTTP": [],
-    "contributors": [
-      "Huntress Research Team",
-      "randomaccess3"
-    ],
+    "contributors": ["Huntress Research Team", "randomaccess3"],
     "dateAdded": "2024-08-14"
   },
   {
@@ -146,11 +132,7 @@
         "type": "Application"
       }
     ],
-    "tags": [
-      "BEC",
-      "spam",
-      "phishing"
-    ],
+    "tags": ["BEC", "spam", "phishing"],
     "references": [
       "https://int.supermailer.de/",
       "https://www.darkreading.com/endpoint-security/supermailer-abuse-email-security-super-sized-credential-theft",
@@ -158,15 +140,8 @@
       "https://darktrace.com/blog/business-email-compromise-to-mass-phishing-campaign-attack-analysis",
       "https://www.linkedin.com/posts/damien-miller-mcandrews_businessemailcompromise-activity-7231350791607881732-UAWJ?utm_source=share&utm_medium=member_desktop"
     ],
-    "mitreTTP": [
-      "T1583.006",
-      "T1566",
-      "T1588.002",
-      "T1657"
-    ],
-    "contributors": [
-      "Syne0"
-    ],
+    "mitreTTP": ["T1583.006", "T1566", "T1588.002", "T1657"],
+    "contributors": ["Syne0"],
     "dateAdded": "2024-08-23"
   },
   {
@@ -213,25 +188,15 @@
         "type": "Delegated"
       }
     ],
-    "tags": [
-      "exfiltration",
-      "BEC"
-    ],
+    "tags": ["exfiltration", "BEC"],
     "references": [
       "https://attack.mitre.org/software/S1040/",
       "https://rclone.org/onedrive/",
       "https://www.kroll.com/en/insights/publications/cyber/new-m365-business-email-compromise-attacks-with-rclone",
       "https://github.com/randomaccess3/detections/blob/main/M365_Oauth_Apps/MaliciousOauthAppDetections.json"
     ],
-    "mitreTTP": [
-      "T1567",
-      "T1083",
-      "T1048"
-    ],
-    "contributors": [
-      "Syne0",
-      "randomaccess3"
-    ],
+    "mitreTTP": ["T1567", "T1083", "T1048"],
+    "contributors": ["Syne0", "randomaccess3"],
     "dateAdded": "2024-09-05"
   },
   {
@@ -263,23 +228,14 @@
         "type": "Delegated"
       }
     ],
-    "tags": [
-      "exfiltration",
-      "BEC",
-      "AddressBook"
-    ],
+    "tags": ["exfiltration", "BEC", "AddressBook"],
     "references": [
       "https://www.exportmycontacts.com",
       "https://cybercorner.tech/common-oauth-apps-used-in-business-email-compromise/#cloudsponge",
       "https://github.com/randomaccess3/detections/blob/main/M365_Oauth_Apps/MaliciousOauthAppDetections.json"
     ],
-    "mitreTTP": [
-      "T1567"
-    ],
-    "contributors": [
-      "Syne0",
-      "randomaccess3"
-    ],
+    "mitreTTP": ["T1567"],
+    "contributors": ["Syne0", "randomaccess3"],
     "dateAdded": "2024-09-29"
   },
   {
@@ -321,28 +277,17 @@
         "type": "Delegated"
       }
     ],
-    "tags": [
-      "collecion",
-      "exfiltration",
-      "phishing",
-      "BEC"
-    ],
+    "tags": ["collecion", "exfiltration", "phishing", "BEC"],
     "references": [
-      "https://cybercorner.tech/common-oauth-apps-used-in-business-email-compromise/#SigParser", 
+      "https://cybercorner.tech/common-oauth-apps-used-in-business-email-compromise/#SigParser",
       "https://support.sigparser.com/en/articles/8844405-i-think-someone-hacked-my-mailbox-can-you-delete-my-account",
       "https://github.com/randomaccess3/detections/blob/main/M365_Oauth_Apps/MaliciousOauthAppDetections.json"
     ],
-    "mitreTTP": [
-      "T1530",
-      "T1567",
-      "T1087.003"
-    ],
-    "contributors": [
-      "Syne0",
-      "randomaccess3"
-    ],
+    "mitreTTP": ["T1530", "T1567", "T1087.003"],
+    "contributors": ["Syne0", "randomaccess3"],
     "dateAdded": "2025-3-24"
-  },{
+  },
+  {
     "appId": "2ef68ccc-8a4d-42ff-ae88-2d7bb89ad139",
     "appDisplayName": "Mail_Backup",
     "appOwnerOrganizationId": "unknown",
@@ -376,11 +321,7 @@
         "type": "Delegated"
       }
     ],
-    "tags": [
-      "exfiltration",
-      "BEC",
-      "backup"
-    ],
+    "tags": ["exfiltration", "BEC", "backup"],
     "references": [
       "https://cybercorner.tech/malicious-azure-application-perfectdata-software-and-office365-business-email-compromise/",
       "https://darktrace.com/blog/how-abuse-of-perfectdata-software-may-create-a-perfect-storm-an-emerging-trend-in-account-takeovers",
@@ -388,73 +329,97 @@
       "https://github.com/randomaccess3/detections/blob/main/M365_Oauth_Apps/MaliciousOauthAppDetections.json"
     ],
     "mitreTTP": [],
-    "contributors": [
-      "Huntress Research Team",
-      "randomaccess3"
-    ],
+    "contributors": ["Huntress Research Team", "randomaccess3"],
     "dateAdded": "2024-08-14"
-  },{
+  },
+  {
     "appId": "858d7e42-35f0-44b7-9033-df309239a4f7",
     "appDisplayName": "ZoomInfo Login",
     "appOwnerOrganizationId": "945a9641-35c7-435c-a5a0-c8753e6dff88",
     "appPublisherName": "unknown",
     "appPublisherId": "unknown",
     "description": "ZoomInfo is a business intelligence platform that contains a large database of company and contact information. It is possible to use ZoomInfo via SSO with a Microsoft365 account, which creates this service principal within a tenant.",
-    "permissions": [
-    ],
-    "tags": [
-      "exfiltration"
-    ],
+    "permissions": [],
+    "tags": ["exfiltration"],
     "references": [
       "https://cybercorner.tech/common-oauth-apps-used-in-business-email-compromise/#ZoomInfo"
     ],
     "mitreTTP": [],
-    "contributors": [
-      "Huntress Research Team",
-      "syne0"
-    ],
+    "contributors": ["Huntress Research Team", "syne0"],
     "dateAdded": "2024-08-14"
-  },{
+  },
+  {
     "appId": "497ac034-5120-4c1a-929a-0351f5c09918",
     "appDisplayName": "ZoomInfo Communitiez Login",
     "appOwnerOrganizationId": "945a9641-35c7-435c-a5a0-c8753e6dff88",
     "appPublisherName": "unknown",
     "appPublisherId": "unknown",
     "description": "ZoomInfo Communitiez Login is the service principal that is consented to when the 'My Connections' feature within ZoomInfo is used. This feature extracts address book and other contact information from the victim account, allowing for ease of target discovery, exfiltration, and targeted phishing attacks.",
-    "permissions": [
-    ],
-    "tags": [
-      "exfiltration"
-    ],
+    "permissions": [],
+    "tags": ["exfiltration"],
     "references": [
       "https://cybercorner.tech/common-oauth-apps-used-in-business-email-compromise/#ZoomInfo"
     ],
     "mitreTTP": [],
-    "contributors": [
-      "Huntress Research Team",
-      "syne0"
-    ],
+    "contributors": ["Huntress Research Team", "syne0"],
     "dateAdded": "2024-08-14"
-  },{
+  },
+  {
     "appId": "77468577-4f6e-40e7-b745-11d3d0c28095",
     "appDisplayName": "Fastmail",
     "appOwnerOrganizationId": "9188040d-6c67-4c5b-b112-36a304b66dad",
     "appPublisherName": "unknown",
     "appPublisherId": "unknown",
     "description": "Fastmail is an alternative email service that allows export from various email providers, including Microsoft365. If a malicious party consents to Fastmail with an account, all email is exfiltrated to an attacker-controlled Fastmail account, with the option to continue to exfiltrate email post-consent.",
-    "permissions": [
-    ],
-    "tags": [
-      "exfiltration"
-    ],
+    "permissions": [],
+    "tags": ["exfiltration"],
     "references": [
       "https://cybercorner.tech/common-oauth-apps-used-in-business-email-compromise/#Fastmail"
     ],
     "mitreTTP": [],
-    "contributors": [
-      "Huntress Research Team",
-      "syne0"
-    ],
+    "contributors": ["Huntress Research Team", "syne0"],
     "dateAdded": "2024-08-14"
+  },
+  {
+    "appId": "412445a2-0794-487e-9dd6-d57d9593b249",
+    "appDisplayName": "CubeBackup",
+    "appOwnerOrganizationId": "9188040d-6c67-4c5b-b112-36a304b66dad",
+    "appPublisherName": "CubeBackup, Inc.",
+    "appPublisherId": "cubebackupinc1662619479161",
+    "description": "CubeBackup is a self-hosted cloud backup solution that integrates with Microsoft 365, including Exchange Online, SharePoint and OneDrive. It can be leveraged by threat actors to conduct automated, mass exfiltration from a victims environment with sufficient privileges.",
+    "permissions": [],
+    "tags": ["exfiltration"],
+    "references": [],
+    "mitreTTP": [],
+    "contributors": [],
+    "dateAdded": "2025-08-06"
+  },
+  {
+    "appId": "231575bc-9f6c-4539-9241-5cfae696b630",
+    "appDisplayName": "Foxmail",
+    "appOwnerOrganizationId": "",
+    "appPublisherName": "",
+    "appPublisherId": "",
+    "description": "Email client",
+    "permissions": [],
+    "tags": ["exfiltration"],
+    "references": [],
+    "mitreTTP": [],
+    "contributors": [],
+    "dateAdded": "2025-09-23"
+  },
+  {
+    "appId": "b1c4926a-5fb6-4aad-b920-709c957be148",
+    "appDisplayName": "Horizon Tech",
+    "appOwnerOrganizationId": "",
+    "appPublisherName": "",
+    "appPublisherId": "",
+    "description": "pulls email and contacts and sends phishing emails.",
+    "permissions": [],
+    "tags": ["exfiltration"],
+    "references": [],
+    "mitreTTP": [],
+    "contributors": [],
+    "dateAdded": "2025-10-13"
   }
 ]
